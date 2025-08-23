@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAE Brothers - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <header class="fixed-header">
+        <div class="logo-3d-center">
+            <model-viewer 
+                id="logo-3d" 
+                src="seu-logo.glb" 
+                alt="Logo 3D da empresa" 
+                disable-zoom
+                style="width: 200px; height: 200px;">
+                
+            </model-viewer>
+        </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">CAMISETAS</a></li>
+                    <li><a href="#">BONÉS</a></li>
+                    <li><a href="#">MOLETONS</a></li>
+                    <li><a href="#">CORTA VENTO</a></li>
+                    <li><a href="#">SOCIAIS</a></li>
+                    <li><a href="#">ACESSÓRIOS</a></li>
+                    <li><a href="#">SOBRE NÓS</a></li>
+                    <li><a href="#">CONTATO</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                 <button id="mobile-menu-btn" class="mobile-menu-btn">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="theme-switcher-container">
+        <label class="switch">
+            <input type="checkbox" id="theme-toggle">
+            <span class="slider round"></span>
+        </label>
+    </div>
+
+    <main>
+        <section class="product-grid">
+            <div class="product-card" data-title="Camiseta Classic DAE" data-description="Camiseta preta 100% algodão com estampa em alta definição. Modelagem slim." data-img="img_01">
+                <img src="img/img_01.JPG" alt="Camiseta DAE">
+            </div>
+            <div class="product-card" data-title="Boné DAE Trucker" data-description="Boné estilo trucker com logo bordado na frente e tela respirável atrás." data-img="img_02">
+                <img src="img/img_02.JPG" alt="Boné DAE">
+            </div>
+             <div class="product-card" data-title="Camiseta Classic DAE" data-description="Camiseta preta 100% algodão com estampa em alta definição. Modelagem slim." data-img="img_03.jpg">
+                <img src="img/img_03.JPG" alt="Camiseta DAE">
+            </div>
+            <div class="product-card" data-title="Boné DAE Trucker" data-description="Boné estilo trucker com logo bordado na frente e tela respirável atrás." data-img="bone_01.jpg">
+                <img src="img/bone_01.JPG" alt="Boné DAE">
+            </div>
+             <div class="product-card" data-title="Camiseta Classic DAE" data-description="Camiseta preta 100% algodão com estampa em alta definição. Modelagem slim." data-img="bone_02.jpg">
+                <img src="img/bone_02.JPG" alt="Camiseta DAE">
+            </div>
+            <div class="product-card" data-title="Boné DAE Trucker" data-description="Boné estilo trucker com logo bordado na frente e tela respirável atrás." data-img="bone_03.jpg">
+                <img src="img/bone_03.JPG" alt="Boné DAE">
+            </div>
+            </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </footer>
+
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <img id="modal-img" src="" alt="Imagem do Produto">
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+            <a href="pagamento.html" class="buy-button">COMPRAR</a>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/FBXLoader.js"></script>
+     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
