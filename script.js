@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
             card.addEventListener('click', () => {
                 // Verifica se os data attributes existem antes de usá-los
                 if (card.dataset.img && card.dataset.title && card.dataset.description) {
-                    modalImg.src = `img/${card.dataset.img}`; // Adicionado o caminho 'img/'
+                    modalImg.src = card.dataset.img;
                     modalTitle.textContent = card.dataset.title;
                     modalDescription.textContent = card.dataset.description;
                     modal.style.display = 'block';
@@ -95,4 +95,5 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
+
 });
